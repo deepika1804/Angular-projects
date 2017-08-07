@@ -1,0 +1,106 @@
+<div class='main-container'>
+
+  <div class='left-container'>
+    <h1>{{profileDetails.name}}</h1>
+    <h2>{{profileDetails.designation}}</h2>
+    <h2>{{profileDetails.Company}}</h2>    
+    <div class='img-circular'></div>
+    <div class="about">ABOUT</div>
+    <div class="about">{{profileDetails.about}}</div>
+    <div class="contacts">
+      <div class="about">Contacts</div>
+      <p><span class="glyphicon glyphicon-envelope"></span>{{profileDetails.email}}</p>
+      <p><span class="glyphicon glyphicon-phone"></span>{{profileDetails.contact}}</p>
+      <p><span class="glyphicon glyphicon-home"></span>{{profileDetails.address}}</p>
+
+    </div>
+    <div class="personal-skills">
+      <div class="about">Personal Skills</div>
+        <div><p>Team Work</p><span class="team"></span></div>
+        <div><p>Creative</p><span class="creative"></span></div>
+        <div><p>Hobbies</p><span class="hobby"></span></div>
+
+    </div>
+
+  </div>
+  <div class='right-container'>
+    <div class='left-half'>
+      <div class='prof-data'>
+          <div>Professional Experience ( {{profileDetails.totalExperience}} ) <span class="glyphicon glyphicon-lock"></span></div>
+          <ul>
+            <div class='projects'>Achievements <span class="glyphicon glyphicon-star"></span></div>
+            <li class="achievements" ng-repeat='value in profileDetails.timeline'>
+              <strong>{{value.duration}}</strong>
+              <!-- <span>{{value.work}}</span> -->
+            </li>
+          </ul>
+          <div class='projects'>Projects</div>
+          <ul class='project-list'>
+            <li ng-repeat='project in profileDetails.profProjects'>
+              <strong>{{project.name}}</strong>
+             <!--  <div class="details"><span>Role :</span><span>{{project.Role}}</span></div>        
+               -->
+               <span>{{project.Responsibility}}</span>
+              <div class="details"><span>Technology Used: </span><span>{{project.Technology}}</span></div>
+
+            </li>
+          </ul>
+      </div>
+      
+    </div>
+    <div class='right-half'>
+      <div class='upper-sec'>
+            <div class='edu-data'>
+              <div>Educational Qualifications <span class="glyphicon glyphicon-education"></span></div>
+               <ul>
+                <li ng-repeat='value in profileDetails.eduQual'>
+                  <strong>{{value.name}}</strong>
+                  <span>{{value.result}}</span>
+                </li>
+              </ul>
+              <div class='extra-skills'>
+                
+                <div class="internships">
+                  <strong>Internships/Projects</strong>
+                  <ul>
+                    <li ng-repeat='internship in profileDetails.internships'>
+                      {{internship.name}} / {{internship.duration}}
+                     
+                    </li>
+                      
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class='lower-sec'>
+          <div class='skills-data'>
+            <div>Skills <span class="glyphicon glyphicon-wrench"></span></div>
+            <div class="logos">
+              <i class="sprite sprite-angular"></i>
+              <i class="sprite sprite-css3"></i>
+              <i class="sprite sprite-html-logo"></i>
+              <i class="sprite sprite-jquery"></i>
+              <i class="sprite sprite-js"></i>
+              <i class="sprite sprite-nodejs-new-pantone-black"></i>
+              <i class="sprite sprite-arduino"></i>              
+              <i class="sprite sprite-requirejs"></i>
+              <i class="sprite sprite-git"></i>
+
+
+            </div>
+          </div>
+        
+          <div class='hobbies-data'>
+            <div>Hobbies <span class="glyphicon glyphicon-flash"></span></div>
+            <div class='logos'>
+                <div ng-repeat="hobby in profileDetails.hobbies">
+                    <span class="glyphicon " ng-class="hobby.hobbyClass"> {{hobby.hobbyName}}
+                </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

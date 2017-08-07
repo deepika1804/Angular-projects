@@ -1,0 +1,51 @@
+.main-table{
+	width: 50%;
+	height: 54%;
+	margin: 0px 10%;
+	position: absolute;
+	background:white;
+	input{
+		width: 25%;
+		height: 10%;
+		padding: 0.3em;
+		margin: 1em;
+	}
+	.header{
+		margin-left: 2%;
+		background: rgb(221, 221, 221) none repeat scroll 0% 0%;
+		width: calc(100% - 17px - 2%);
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		height: 8%;
+		text-align: center;
+		padding-top: 0.5em;
+
+	}
+	li{
+		width:19%;
+		display:inline-block;
+		height:2em;
+		padding-top:0.5em;
+	}
+	.main-header{
+	    width: calc(100% - 17px - 2%);
+	    margin-left: 2%;
+	    background-color: #4CAF50;
+    color: white;
+	}
+	.main-list{
+		width:98%;
+		margin-left:2%;
+		height:65%;
+		overflow:auto;
+		ul{
+			width:100%;
+			height:auto;
+			li{
+				width:19%;
+				display:inline-block;
+				height:2em;
+			}
+		}
+	}
+}

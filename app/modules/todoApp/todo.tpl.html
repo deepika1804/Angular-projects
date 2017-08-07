@@ -1,0 +1,26 @@
+      
+      
+
+  <div class='todo-wrapper'>
+    <h1>Welcome! You've got <span class="emphasis"> {{todos.length}} </span> tasks For today</h1>  
+    <div class='enter-details'>
+      <form ng-submit="addTodo()">
+          <input type="text" ng-model="todoText" name="todo" placeholder="Enter Todo List..." />
+      </form>
+      
+    </div>
+    
+    <div class="todo-list">
+      <div>
+        <div class="todo colorNo-{{$index % 10}}"  ng-repeat="todo in todos">
+          <div class="icons"> 
+              <span class='push-left glyphicon glyphicon-pushpin'></span>
+              <span class='glyphicon glyphicon-remove' ng-click=removeTodo(todo)></span>
+          </div>
+          
+          <div>{{todo.text}} </div>
+        </div>
+        </div>
+    </div>  
+  </div>
+

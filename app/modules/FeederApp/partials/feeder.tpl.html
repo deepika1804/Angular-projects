@@ -1,0 +1,26 @@
+      
+      
+<div class="container" >
+
+    <div class="main-table">
+      <input type="text" ng-model="nameFilter" placeholder="Search..."/>
+      <div class="header">Sports Car Drivers List</div>
+      <ul class="main-header">
+          <li>S.no</li>
+          <li>Name</li>
+          <li>Nationality</li>
+          <li>Company</li>
+          <li>Points</li>
+      </ul>
+      <div class="main-list">
+          <ul ng-repeat='driver in driversList | filter:nameFilter'>
+            <li>{{$index + 1}}</li>
+            <li><a href="#/feeder/{{driver.Driver.driverId}}">{{driver.Driver.givenName}} {{driver.Driver.familyName}}</a></li>
+            <li>{{driver.Driver.nationality}}</li>
+            <li>{{driver.Constructors[0].name}}</li>
+            <li>{{driver.points}}</li>
+        </ul>
+      </div>
+      
+    </div>
+ </div>

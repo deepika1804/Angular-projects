@@ -1,0 +1,49 @@
+nav{
+      height: 70%;
+    margin-top: 100px;
+
+}
+nav.home .home,nav.todo .todo,nav.feeder .feeder{
+  border-right: 8px solid grey;
+  background: #ccc;
+}
+.menu {
+  list-style: outside none none;
+  
+  padding: 0px 0px 0.5em;
+  height: 100%;
+  li{
+  		display: block;
+      padding-right: 0.3em;
+      width: 100%;
+      height: 15%;
+      margin-top:0.8em;
+      &.active-link{
+        border-right: 8px solid grey;
+        background: #ccc
+      }
+      span{
+        font-size: 2em;
+        display: block;
+        text-align: center;
+        padding-top:0.4em;
+      }
+  		a{
+  			text-decoration: none;
+        padding: 0.5em;
+        vertical-align: middle;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 95%;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+  		}
+      a:active{
+        color:grey;
+      }
+  }
+}
+
+
+
