@@ -5,7 +5,7 @@ angular.module('mainApp').directive('navigationLinksDir',['jQuery',function($){
 		link:function(scope, element, attrs){
 			var hidepane=true;
 			element.on('click',function(){
-				scope.active = 'home';
+				
 				var $linkPane = $('.links-pane');
 				hidepane = !hidepane;
 				if(!hidepane){

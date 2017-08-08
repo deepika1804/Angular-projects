@@ -48,7 +48,8 @@ q:before, q:after {
   height: calc(100% - 5px);
   border-bottom: 1px solid black; }
   .main-container .left-container h1 {
-    font-size: 1.8em; }
+    font-size: 1.8em;
+    font-family: helvetica; }
   .main-container .left-container h2 {
     font-size: 1em; }
   .main-container .left-container h1, .main-container .left-container h2 {
@@ -69,7 +70,8 @@ q:before, q:after {
     font-size: 1em;
     margin: 10px auto;
     width: 95%;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: justify; }
   .main-container .left-container .contacts, .main-container .left-container .personal-skills {
     width: 100%;
     margin: 0 auto; }
@@ -78,9 +80,15 @@ q:before, q:after {
     .main-container .left-container .contacts p, .main-container .left-container .personal-skills p {
       font-size: 1em;
       padding: 0.3em;
-      word-wrap: break-word; }
+      word-wrap: break-word;
+      margin-left: 0.2em;
+      overflow: hidden; }
       .main-container .left-container .contacts p span, .main-container .left-container .personal-skills p span {
-        padding-right: 0.1em; }
+        padding-right: 0.4em;
+        float: left; }
+      .main-container .left-container .contacts p span.pull-right, .main-container .left-container .personal-skills p span.pull-right {
+        width: 90%;
+        text-align: left; }
   .main-container .left-container .personal-skills div {
     overflow: hidden; }
   .main-container .left-container .personal-skills p {
@@ -125,7 +133,8 @@ q:before, q:after {
       padding: 0.4em 0;
       font-size: 1em; }
       .main-container .right-container .left-half .prof-data .project-list .details span:first-child {
-        font-weight: bold; }
+        font-weight: bold;
+        padding-bottom: 0.3em; }
       .main-container .right-container .left-half .prof-data .project-list .details span {
         display: inline-block;
         font-weight: normal;
@@ -147,12 +156,13 @@ q:before, q:after {
           font-size: 1.5em;
           padding: 0.1em 1em;
           font-weight: bold; }
-      .main-container .right-container .right-half .lower-sec .logos {
-        border-top: 2px solid #000;
-        width: 95%;
-        margin: 1em auto 0px; }
+        .main-container .right-container .right-half .lower-sec .skills-data .logos, .main-container .right-container .right-half .lower-sec .hobbies-data .logos {
+          border-top: 2px solid #000;
+          width: 95%;
+          margin: 1em auto 0px;
+          font-size: 1.2em; }
       .main-container .right-container .right-half .lower-sec .hobbies-data .logos div {
-        font-size: 1em;
+        font-size: 1.2em;
         width: 100%;
         padding: 0.5em 0.1em;
         font-weight: bold; }
@@ -178,11 +188,13 @@ q:before, q:after {
           display: block; }
         .main-container .right-container .prof-data ul li span, .main-container .right-container .edu-data ul li span {
           display: block;
-          padding-left: 1em;
           word-wrap: break-word; }
-  .main-container .right-container .prof-data ul li strong {
-    font-weight: bold;
-    font-size: 1em; }
+  .main-container .right-container .prof-data ul {
+    font-size: 1.1em; }
+    .main-container .right-container .prof-data ul li strong {
+      font-size: 0.98em;
+      font-weight: bold;
+      font-size: 1em; }
   .main-container .right-container .prof-data .achievements strong {
     font-size: 0.8em;
     font-weight: normal; }
@@ -212,7 +224,8 @@ html, body {
 body {
   background: black;
   max-height: 100%;
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: ms sans serif; }
 
 .wrapper {
   min-height: 100%;

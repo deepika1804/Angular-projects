@@ -27,7 +27,7 @@ controller('homeController',['$scope',function($scope){
         ],
         eduQual: [
         	{
-        		name : "BACHELOR DEGREE / 2010 - 2014",
+        		name : "BACHELOR DEGREE / 2010 - 2014 / ELECTRONICS AND COMMUNICATIONS",
         		result : "NATIONAL INSTITUTE OF TECHNOLOGY,HAMIRPUR - 8.47"
         	},
         	{
@@ -46,10 +46,10 @@ controller('homeController',['$scope',function($scope){
         	Responsibility : 'Development of responsive web pages, functionality, design according to wireFrames.'
         },
         {
-        	name : 'IDEA Enginnering Research Lab(Research Lab at Sapient)',
+        	name : 'IDEA Engineering Research Lab(Research Lab at Sapient)',
         	Role : 'UI Developer',
         	Technology : 'HTML,CSS,Javascript,JQuery,NodeJS,websockets,LEGO Mindstorm',
-        	Responsibility : 'Development of real time applications using frontEnd technologies(Node JS),sensors,arduino microcontrollers..'
+        	Responsibility : 'Development of real time applications using frontEnd technologies(Node JS),sensors,arduino microcontrollers.'
         },
          {
         	name : 'Client JATO(Jet Airways Take Off)',

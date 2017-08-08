@@ -13,6 +13,7 @@
 		border-bottom:1px solid black;
 		h1{
 			font-size:1.8em;
+			font-family:helvetica;
 		}
 		h2{
 			font-size:1em;
@@ -40,6 +41,7 @@
 			margin:10px auto;
 			width:95%;
 			font-weight:bold;
+			text-align:justify;
 		}
 		.contacts,.personal-skills{
 			width:100%;
@@ -51,8 +53,15 @@
 				font-size:1em;
 				padding:0.3em;
 				word-wrap:break-word;
+				margin-left:0.2em;
+				overflow:hidden;
 				span{
-					padding-right:0.1em;
+					padding-right:0.4em;
+					float:left;
+				}
+				span.pull-right{
+					width:90%;
+					text-align:left;
 				}
 			}
 		}
@@ -109,11 +118,13 @@
 					padding:0.5em 0.2em;
 				}
 				.project-list {
+
 					.details{
 						padding:0.4em 0;
 						font-size:1em;
 						span:first-child{
 							font-weight:bold;
+							padding-bottom:0.3em;
 						}
 						span{
 							display: inline-block;
@@ -122,6 +133,7 @@
 							word-break: break-all;
 						}
 					}
+
 					
 				}
 			}
@@ -144,16 +156,18 @@
 						padding:0.1em 1em;
 						font-weight:bold;
 					}
+					.logos{
+						border-top: 2px solid #000;
+						width: 95%;
+						margin: 1em auto 0px;
+						font-size:1.2em;
+					}
 				}
-				.logos{
-					border-top: 2px solid #000;
-					width: 95%;
-					margin: 1em auto 0px;
-				}
+				
 				.hobbies-data{
 					.logos{
 						div{
-							font-size: 1em;
+							font-size: 1.2em;
 							width: 100%;
 							padding: 0.5em 0.1em;
 							font-weight:bold;
@@ -187,7 +201,6 @@
 						}
 						span{
 							display:block;
-							padding-left:1em;
 							word-wrap:break-word;
 						}
 					}
@@ -196,8 +209,10 @@
 			}
 			.prof-data{
 				ul{
+					font-size:1.1em;
 					li{
 						strong{
+							font-size:0.98em;
 							font-weight:bold;
 							font-size:1em;
 						}
