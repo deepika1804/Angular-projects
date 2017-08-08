@@ -38,7 +38,7 @@
 		}
 		.about{
 			font-size:1em;
-			margin:10px auto;
+			margin:5px auto;
 			width:95%;
 			font-weight:bold;
 			text-align:justify;
@@ -169,8 +169,9 @@
 						div{
 							font-size: 1.2em;
 							width: 100%;
-							padding: 0.5em 0.1em;
+							padding: 0.5em 0em;
 							font-weight:bold;
+							margin-top:0.2em;
 						}
 					}
 				}
@@ -250,10 +251,13 @@
 						strong{
 							font-size:0.9em;
 						}
-						li{
-						    font-size: 0.6em;
-						    font-weight: normal;
-						    padding:0.4em;
+						ul{
+							margin-top:0.4em;
+							li{
+							    font-size: 0.6em;
+							    font-weight: normal;
+							    padding:0.4em;
+							}
 						}
 					}
 				}

@@ -68,7 +68,7 @@ q:before, q:after {
     -moz-border-radius: 75px; }
   .main-container .left-container .about {
     font-size: 1em;
-    margin: 10px auto;
+    margin: 5px auto;
     width: 95%;
     font-weight: bold;
     text-align: justify; }
@@ -164,8 +164,9 @@ q:before, q:after {
       .main-container .right-container .right-half .lower-sec .hobbies-data .logos div {
         font-size: 1.2em;
         width: 100%;
-        padding: 0.5em 0.1em;
-        font-weight: bold; }
+        padding: 0.5em 0em;
+        font-weight: bold;
+        margin-top: 0.2em; }
   .main-container .right-container .prof-data, .main-container .right-container .edu-data {
     height: 100%;
     display: inline-block;
@@ -213,10 +214,12 @@ q:before, q:after {
       width: 100%; }
       .main-container .right-container .edu-data .extra-skills .internships strong {
         font-size: 0.9em; }
-      .main-container .right-container .edu-data .extra-skills .internships li {
-        font-size: 0.6em;
-        font-weight: normal;
-        padding: 0.4em; }
+      .main-container .right-container .edu-data .extra-skills .internships ul {
+        margin-top: 0.4em; }
+        .main-container .right-container .edu-data .extra-skills .internships ul li {
+          font-size: 0.6em;
+          font-weight: normal;
+          padding: 0.4em; }
 
 html, body {
   height: 100%; }
