@@ -42,19 +42,19 @@ controller('homeController',['$scope',function($scope){
         profProjects:[{
         	name : 'Feedback Tracker',
         	Role : 'UI Developer',
-        	Technology : 'HTML,CSS,Javascript,JQuery',
+        	Technology : 'HTML, CSS, Javascript, JQuery',
         	Responsibility : 'Development of responsive web pages, functionality, design according to wireFrames.'
         },
         {
         	name : 'IDEA Engineering Research Lab(Research Lab at Sapient)',
         	Role : 'UI Developer',
-        	Technology : 'HTML,CSS,Javascript,JQuery,NodeJS,websockets,LEGO Mindstorm',
+        	Technology : 'HTML, CSS, Javascript, JQuery, NodeJS, Websockets, LEGO Mindstorm',
         	Responsibility : 'Development of real time applications using frontEnd technologies(Node JS),sensors,arduino microcontrollers.'
         },
          {
         	name : 'Client JATO(Jet Airways Take Off)',
         	Role : 'UI Developer',
-        	Technology : 'HTML,CSS,Javascript,JQuery,NodeJS,AngularJS,RequireJS, Karma, Protactor',
+        	Technology : 'HTML, CSS, Javascript, JQuery, NodeJS, AngularJS, RequireJS, Karma, Protactor',
         	Responsibility : 'Development of modules, Performance Enhancements, Test Cases For AngularJS.'
         }],
         hobbies:[{

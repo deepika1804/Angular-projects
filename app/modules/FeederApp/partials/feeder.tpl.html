@@ -1,6 +1,6 @@
       
       
-<div class="container" >
+<div class="feeder-wrapper" >
 
     <div class="main-table">
       <input type="text" ng-model="nameFilter" placeholder="Search..."/>
@@ -22,5 +22,12 @@
         </ul>
       </div>
       
+    </div>
+
+    <div id="geolocation-container" geolocation-dir>
+      <p class="title">Get your location by clicking on button below</p>
+      <p id="message">Click Me to know your location</p>
+      <button id="demo">Try it</button>
+      <div id="mapholder"><img src="http://maps.googleapis.com/maps/api/staticmap?center=50&zoom=14&size=600x400&sensor=false%22"></div>
     </div>
  </div>

@@ -22,4 +22,31 @@ controller('driversController',['$scope','driversDataService',function($scope,dr
     driversDataService.getDriverRaces($scope.id).success(function (response) {
         $scope.races = response.MRData.RaceTable.Races; 
     }); 
+
+}]).directive('geolocationDir',['jQuery',function($){
+    return {
+        restrict : 'A',
+        controller: ['$scope', function tabsController($scope) {}],
+        link:function(scope, element, attrs){
+            var message=element.find('#message');
+        var demo=element.find('#demo');
+        demo.on('click',getLocation);
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition,showError);
+            } else {
+                message.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+            var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+            +latlon+"&zoom=14&size=600x400&sensor=false";
+            document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+        }
+        function showError(error){
+            message.innerHTML = "Sorry sharing position is not allowed.";
+        }
+        }
+    }
 }]);

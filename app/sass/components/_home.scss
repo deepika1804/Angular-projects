@@ -20,7 +20,7 @@
 		}
 		h1,h2{
 			color:#fff;
-			padding:5px;
+			padding:4px;
 		}
 
 		.img-circular{
@@ -28,7 +28,7 @@
 			 height: 25%;
 			 padding:10px;
 			 margin:0 auto;
-			 background-image: url('../img/profile.png');
+			 background-image: url('../img/profile1.png');
 			 background-size: cover;
 			 display: block;
 			 border-radius: 75px;
@@ -38,7 +38,7 @@
 		}
 		.about{
 			font-size:1em;
-			margin:5px auto;
+			margin:8px auto;
 			width:95%;
 			font-weight:bold;
 			text-align:justify;
@@ -130,7 +130,8 @@
 							display: inline-block;
 							font-weight: normal;
 							font-size: 1em;
-							word-break: break-all;
+							width:90%;
+							
 						}
 					}
 
@@ -158,13 +159,15 @@
 					}
 					.logos{
 						border-top: 2px solid #000;
-						width: 95%;
+						width: 99%;
 						margin: 1em auto 0px;
 						font-size:1.2em;
 					}
 				}
 				
 				.hobbies-data{
+					width:40%;
+					margin-left:0.8em;
 					.logos{
 						div{
 							font-size: 1.2em;
