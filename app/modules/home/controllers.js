@@ -54,7 +54,7 @@ controller('homeController',['$scope',function($scope){
          {
         	name : 'Client JATO(Jet Airways Take Off)',
         	Role : 'UI Developer',
-        	Technology : 'HTML, CSS, Javascript, JQuery, NodeJS, AngularJS, RequireJS, Karma, Protactor',
+        	Technology : 'HTML, CSS, SASS, Javascript, JQuery, NodeJS, AngularJS, RequireJS, Karma, Protactor',
         	Responsibility : 'Development of modules, Performance Enhancements, Test Cases For AngularJS.'
         }],
         hobbies:[{
